@@ -23,12 +23,11 @@ SiCat's main strength lies in its ability to traverse both online and local reso
  - [Metasploit Modules](https://github.com/rapid7/metasploit-framework/tree/master/modules)
 
 ## Installation
-
+``` python -m venv sicat
+    cd sicat 
 ``` bash
-git clone https://github.com/justakazh/sicat.git && cd sicat
-
-pip  install  -r  requirements.txt
-
+  git clone https://github.com/justakazh/sicat.git && cd sicat
+  uv pip  install  -r  requirements.txt
 ```
 
   
