@@ -16,7 +16,7 @@ _._     _,-'""`-._
 {Fore.RED}SiCat{Fore.WHITE} - The useful {Fore.RED}exploit{Fore.WHITE} finder
 @justakazh (https://github.com/justakazh/sicat)
 
-usage : sicat.py --help
+usage : vulny.py --help
         """
         print(ascii_art)
 
