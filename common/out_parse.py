@@ -120,6 +120,7 @@ usage : vulny.py --help
                     print(f"|{Fore.BLUE}-{Fore.WHITE} Title : {data['title'].capitalize()}")
                     print(f"|{Fore.BLUE}-{Fore.WHITE} Module : {data['module']}")
                     print(f"|{Fore.BLUE}-{Fore.WHITE} Link : {data['link']}")
+                    print(f"|{Fore.BLUE}-{Fore.WHITE} Description : {data['description']}")
                     print("|")
                     print("|")
 
