@@ -2,6 +2,14 @@ import json
 import os 
 import subprocess
 
+def get_url():
+  os.system
+  os.system(f"curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/db/modules_metadata_base.json >> msf_module.json")
+def convert():
+  import json_convert 
+get_url()
+convert()
+
 msf_module = os.path.abspath('msf_module.json')
 print(msf_module)
 
@@ -16,7 +24,8 @@ for key, value in data.items():
         "title": value["name"].lower(),
         "module": value["fullname"],
         "link": f"https://www.rapid7.com/db/modules/{value['fullname']}",
-        "references": value.get("references", [])
+        "references": value.get("references", []),
+        "description": value["description"]
     })
 
 # Output as formatted JSON
