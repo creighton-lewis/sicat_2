@@ -1,16 +1,14 @@
 
-# SiCat - The useful exploit finder
 
-![SiCat Preview](vendor/preview.png)
   
 
 ## Introduction
 
-SiCat is an advanced exploit search tool designed to identify and gather information about exploits from both open sources and local repositories effectively. With a focus on cybersecurity, SiCat allows users to quickly search online, finding potential vulnerabilities and relevant exploits for ongoing projects or systems.
+Vulny (adopted from sicat) is an advanced exploit search tool designed to identify and gather information about exploits from both open sources and local repositories effectively. With a focus on cybersecurity, SiCat allows users to quickly search online, finding potential vulnerabilities and relevant exploits for ongoing projects or systems.
 
   
 
-SiCat's main strength lies in its ability to traverse both online and local resources to collect information about relevant exploitations. This tool aids cybersecurity professionals and researchers in understanding potential security risks, providing valuable insights to enhance system security.
+Vulny main strength lies in its ability to traverse both online and local resources to collect information about relevant exploitations. This tool aids cybersecurity professionals and researchers in understanding potential security risks, providing valuable insights to enhance system security.
 
   
 
@@ -23,7 +21,7 @@ SiCat's main strength lies in its ability to traverse both online and local reso
 
 ## Installation
 ```bash 
-    python -m venv sicat
+    python -m venv {venv name}
     cd sicat 
 ``` bash
     git clone https://github.com/justakazh/sicat.git && cd sicat
@@ -79,6 +77,7 @@ uv run sicat.py
 nmap --open -sV localhost -oX nmap_out.xml
 python sicat.py -nm nmap_out.xml --packetstorm
 
+
 ```
 
 ## To-do
@@ -86,7 +85,3 @@ python sicat.py -nm nmap_out.xml --packetstorm
 - [ ] Nmap multiple host support
 - [ ] Search NSE Script
 - [ ] Search by PORT
-
-## Contribution
-
-I'm aware that perfection is elusive in coding. If you come across any bugs, feel free to contribute by fixing the code or suggesting new features. Your input is always welcomed and valued.
