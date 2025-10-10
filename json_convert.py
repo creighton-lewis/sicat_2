@@ -2,7 +2,7 @@ import json
 import os 
 import subprocess
 
-msf_module = os.path.abspath('sicat_2/files/msf_module.json')
+msf_module = os.path.abspath('msf_module.json')
 print(msf_module)
 
 # Load your original data
