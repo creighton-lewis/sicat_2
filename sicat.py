@@ -43,7 +43,23 @@ def main(args, keyword="", keyword_version=""):
             getnvd = NvdDB.find(keyword)
         Output.nvddb(getnvd)
 
+    if args.all:
+        if keyword_version != None:
+            getnvd = ExploitDB.find(keyword, keyword_version)
+            getnvd = PacketStormSecurity.find(keyword, keyword_version)
+            getnvd = MsfModule.find(keyword, keyword_version)
+            getnvd = NvdDB.find(keyword, keyword_version)
+        else:
+            getnvd = ExploitDB.find(keyword, keyword_version)
+            getnvd = PacketStormSecurity.find(keyword, keyword_version)
+            getnvd = MsfModule.find(keyword, keyword_version)
+            getnvd = NvdDB.find(keyword, keyword_version)
+            Output.exploitdb(getnvd)
+            Output.packetstormsecurity(getnvd)
+            Output.msfmodule(getnvd)
+            Output.nvddb(getnvd)
 
+    
     if args.output:
         if args.output_type  == "json":
             Output.outJson(args.output)
