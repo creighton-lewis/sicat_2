@@ -46,10 +46,10 @@ Vulny main strength lies in its ability to traverse both online and local resour
 | `-kv KEYWORK_VERSION` |  |
 | `-nm` | Identify via nmap output |
 | `--nvd` | Use NVD as info source |
-| `--packetstorm` | Use PacketStorm as info source |
+| `--ps` | Use PacketStorm as info source |
 | `--exploitdb` | Use ExploitDB as info source |
 | `--exploitalert` | Use ExploitAlert as info source |
-| `--msfmoduke` | Use metasploit as info source |
+| `--msfmodule` | Use metasploit as info source |
 | `--all` | Use all sources 
 | `-o OUTPUT` | Path to save output to |
 | `-ot OUTPUT_TYPE` | Output file type: json or html |
