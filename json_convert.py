@@ -1,6 +1,7 @@
 import json
 import os 
 import subprocess
+import shutil
 
 def get_url():
   os.system
@@ -32,6 +33,9 @@ print(json.dumps(result, indent=4))
 with open('output.json', 'w') as f:
     f.write(json.dumps(result, indent=4))
 os.system(f"rm msf_module.json")
-os.system(f"rm files/msf_module.json")
-os.path(f"mv output.json files/msf_module.json")
+os.chdir("files)
+os.system(f"rm msf_module.json")
+os.path(f"mv output.json msf_module.json")
+shutil.move("msf_module.json" , "files/msf_module.json")
+
 
