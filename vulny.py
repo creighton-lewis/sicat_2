@@ -94,8 +94,10 @@ if __name__ == "__main__":
     parser.add_argument('--packetstorm', action='store_true', help='Use PacketStorm as a source of information')
     parser.add_argument('--exploitdb', action='store_true', help='Use ExploitDB as a source of information')
     parser.add_argument('--msfmodule', action='store_true', help='Use metasploit module as a source of information')
+    parser.add_argument('--all','--output_type', type=str, help='Use all modules as source of information')
     parser.add_argument('-o','--output', type=str, help='path to save the output')
     parser.add_argument('-ot','--output_type', type=str, help='output file type json and html')
+
 
     args = parser.parse_args()
 
