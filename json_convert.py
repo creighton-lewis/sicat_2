@@ -31,3 +31,7 @@ print(json.dumps(result, indent=4))
 # Write to file
 with open('output.json', 'w') as f:
     f.write(json.dumps(result, indent=4))
+os.system(f"rm msf_module.json")
+os.system(f"rm files/msf_module.json")
+os.path(f"mv output.json files/msf_module.json")
+
