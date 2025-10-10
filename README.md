@@ -52,6 +52,7 @@ SiCat's main strength lies in its ability to traverse both online and local reso
 | `--exploitdb` | Use ExploitDB as info source |
 | `--exploitalert` | Use ExploitAlert as info source |
 | `--msfmoduke` | Use metasploit as info source |
+| `--all` | Use all sources 
 | `-o OUTPUT` | Path to save output to |
 | `-ot OUTPUT_TYPE` | Output file type: json or html |
 
