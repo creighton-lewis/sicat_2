@@ -35,7 +35,7 @@ with open('output.json', 'w') as f:
 os.system(f"rm msf_module.json")
 os.chdir("files)
 os.system(f"rm msf_module.json")
-os.path(f"mv output.json msf_module.json")
+os.system(f"mv output.json msf_module.json")
 shutil.move("msf_module.json" , "files/msf_module.json")
 
 
